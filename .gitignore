@@ -1,0 +1,42 @@
+# Dependencies — reinstallable from package-lock.json, which IS committed.
+node_modules
+.pnp
+.pnp.js
+
+# Build output — `npm run build` regenerates it.
+dist
+dist-ssr
+*.local
+
+# Vite's dependency cache. Normally lives inside node_modules and so is already
+# covered above; listed for the case where cacheDir is pointed elsewhere.
+.vite
+
+# Environment files. Vite reads .env, .env.local, .env.<mode> and
+# .env.<mode>.local, so all four can hold secrets — the stock template only
+# catches the `.local` ones via `*.local`. .env.example stays tracked so the
+# required variables are documented without their values.
+.env
+.env.*
+!.env.example
+
+# Logs — noisy, and never worth a diff.
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor and OS noise. Workspace settings are personal; shared ones are not.
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
